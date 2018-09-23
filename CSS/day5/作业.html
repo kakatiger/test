@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            text-decoration:none;
+        }
+        #container{
+            width:610px;
+            height:380px;
+            background:rgb(243,243,243);
+            margin:80px auto;
+            position:relative;
+        }
+        #container img{
+            position:absolute;
+            left:175px;
+            top:60px;
+            transition-duration:1s;
+        }
+        img:hover{
+            transform:scale(1.1);
+        }
+        p:first-child{
+            font-size:24px;
+            color:rgb(51,51,51);
+            font-family: 'Helvetica';
+            position:absolute;
+            top:65px;
+            left:65px;
+        }
+        p:nth-child(2){
+            font-size:24px;
+            color:rgb(51,51,51);
+            font-family: 'Helvetica';
+            position:absolute;
+            left:65px;
+            top:100px;
+        }
+        p:nth-child(3), p:nth-child(4){
+            font-size:10px;
+            color: rgb(102,102,102);
+            position:absolute;
+            left:65px;
+            top:135px;
+        }
+        p:last-child{
+            top:152px;
+
+        }
+        #price{
+            font-size:24px;
+            color:rgb(10,160,238);
+            position:absolute;
+            left:65px;
+            bottom:175px;
+        }
+        a{
+            position:absolute;
+            width:130px;
+            height:40px;
+            background-image:linear-gradient(to top, #27b1f6 0%, #0aa1ed 100%);
+            line-height:40px;
+            text-align:center;
+            left:65px;
+            bottom:115px;
+            color:white;
+            border-radius:3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="desc">
+            <p>Apple&nbsp;&nbsp;MacBook</p>
+            <p>Air系列</p>
+            <p>酷睿双核i5处理器|256G&nbsp;ssd|8GB内存|英特</p>
+            <p>尔HD显卡620含共享显卡内存</p>
+        </div>
+        <div id="price">
+            ￥6988.00
+        </div>
+        <a href="http://www.codeboy.com/product_details.html?lid=1">查看详情</a>
+        <img src="laptop.png" alt="">
+    </div>
+</body>
+</html>

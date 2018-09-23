@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+     <style>
+         div{
+             width:200px;
+             height:200px;
+             background-color:red;
+             border:3px dotted blue;
+             padding:5px;
+             /*background-clip:border-box;*/
+             background-clip:padding-box;
+             /*background-clip:content-box;*/
+
+         }
+     </style>
+ </head>
+ <!--<link rel="stylesheet" href="mystyle.css">-->
+ <body>
+	<h3>连轴转！习主席的一天这么过</h3>
+	<p>这是习近平主席在8月31日、9月1日、9月2日分别与来参加2018年中非合作论坛北京峰会的外宾进行会晤的场次。</p>
+	<div>　9月3日，习主席虽然没有与外宾双边会晤的安排，但上午、下午各一场“大聚会”的节奏，仍然把他的时间填得满满。</div>
+	
+ 
+ </body>
+</html>
+<script>
+    var str="sdfksjfhkjsafhlio"
+    var obj={};
+    for (var i=0;i<str.length;i++) {
+       if (obj[str[i]] == undefined) {
+           obj[str[i]]=1
+       } else{
+           obj[str[i]]++
+       }
+    }
+    var max=0
+    var max_key
+    for (var key in obj) {
+       if (obj[key]> max ){
+            max=obj[key];
+            max_key=key
+
+       }
+    }
+</script>

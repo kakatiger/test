@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>数组的分类</title>
+ </head>
+ <body>
+  <script>
+  //关联数组
+ /* var arr=[];
+  arr['name']='Tom';
+  arr['age']=18;
+  arr['salary']=8000;
+ for(var key in arr){
+ console.log(arr[key])
+ }*/
+ //计算平均分
+ /*var arr=[80,79,68,96]
+  var sum=0;
+  var avg;
+ for (var key in arr )
+ {
+	sum+=arr[key]
+	avg=sum/arr.length
+ }
+ console.log(sum,avg)*/
+
+
+//求传递的实参的和
+/* var sum=0
+ function fn(){
+	//console.log(arguments);
+	for (var key in arguments )
+	{	sum += arguments[key];
+		
+	}
+
+	return sum;
+
+
+ }
+var res=fn(10,20,30,40);
+	console.log(res);*/
+
+/*var arr=[5,10,105,32,79]
+//把第一个元素作为最大值
+var max=arr[0]
+//使用这个最大值和后面的数挨个比较
+//如果最大值小于后面的数，把后面的数放入到max
+for (var i=1;i<arr.length ;i++ )
+{
+	if (max<arr[i])
+	{max=arr[i]
+	}
+}
+console.log(max)
+
+
+
+var max1=Math.max.apply(null,arr);
+console.log(max1)*/
+
+/*function min(){
+ var mini=arguments[0]
+ for (var i=1;i<=arguments.length ;i++ )
+ {if (mini>arguments[i])
+ {mini=arguments[i]
+ }
+ 
+ }
+
+console.log(mini)
+}*/
+
+//查找数组对应下标
+var arr=[11,12,13,14,15]
+for (var i=0;i<arr.length ;i++ )
+{if (arr[i]==13)
+{
+console.log(i)
+}
+
+}
+
+  </script>
+ </body>
+</html>

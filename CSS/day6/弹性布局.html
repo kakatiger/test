@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1,.c2,.c3{
+            width:200px;
+            height:200px;
+
+        }
+        #container{
+            border:2px solid red;
+            display:flex;
+            /*flex-direction:row;*/
+            /*flex-wrap:wrap;*/
+            flex-flow:row nowrap;
+            justify-content:space-around;
+            height:300px;
+            align-items:baseline;
+
+
+        }
+        .c1{
+            background:blue;
+            order:3;
+        }
+        .c2{
+            background:yellow;
+            flex-grow: 0;
+        }
+        .c3{
+            background:green;
+            order:1;
+            flex-grow:1;
+           align-self:flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        子元素
+        <div class="c1">1</div>
+        <div class="c2">2</div>
+        <div class="c3">3</div>
+    </div>
+</body>
+</html>

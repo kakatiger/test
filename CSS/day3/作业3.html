@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	.nav{
+		width:90%;
+		background:#eeeeee;
+	}
+	.nav span{
+		line-height:50px;
+		display:inline-block;
+		width:220px;
+		padding:5px 36px;
+		margin:-3px;
+		box-sizing:border-box;
+	}
+	.nav span a{
+		text-decoration:none;
+		color:#005ab1;
+	}
+	
+  </style>
+ </head>
+ <body>
+	 <div class='nav' id='navid'>
+		<span id='span1'><a id='d1' href="javascript:fn2()" >网友讨论圈</a></span>
+		<span id='span2'><a href="javascript:fn1()" >晒单贴</a></span>
+		<span><a href="#3">讨论帖</a></span>
+		<span><a href="#4">问答帖</a></span>
+		<span><a href="#4">圈子贴</a></span>
+	 </div>
+	 <div id='viwe'>
+	 
+	 </div >
+ 
+ </body>
+</html>
+	<script src='common.js'></script>
+	<script>
+
+			function fn1(){
+
+			$('viwe').innerHTML='<iframe src="作业301.html" width=100% height=500px frameborder="0"></iframe>';
+			//$('navid').style.background='#eeeeee'
+			$('span2').style.background='white';
+			$('span2').style.borderTop='solid red';
+			$('span2').style.borderRadius='5px';
+			$('span1').style.background='#eeeeee';
+			$('span1').style.borderTop='0';
+			$('span1').style.borderRadius='0';
+		}
+
+			function fn2(){
+			a=0;
+			b=1
+			$('viwe').innerHTML='<iframe src="作业302.html" width=100% height=500px frameborder="0"></iframe>';
+			//$('navid').style.background='#fff'
+
+			$('span1').style.background='white';
+			$('span1').style.borderTop='solid red';
+			$('span1').style.borderRadius='5px';
+			$('span2').style.background='#eeeeee';
+			$('span2').style.borderTop='0';
+			$('span2').style.borderRadius='0';
+		}
+		
+		
+
+	</script>

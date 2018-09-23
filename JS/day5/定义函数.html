@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+ <script>
+ /*function printHello(){
+	console.log('hello');
+	console.log('the world ')
+ }
+*/
+//带有参数的函数声明和调用
+ /*function say(name,age){
+	//var name= 'tom'
+	//var age=20
+	console.log('我叫'+name+',今年'+age+'岁');
+}
+say('tiger',27)*/
+/*function calc(a,b){
+		var c=a+b
+	console.log(c)
+}
+var res2=calc(12,88)*/
+//带有返回值的函数声明和调用
+/*function calc(num1,num2){
+	return num1+num2
+
+}
+//调用函数
+var res1=calc(3,5);
+var res2=calc(4,7);
+console.log(res1+res2);*/
+/*function getMax(a,b){
+	if (a>=b)
+	{return a
+	}else{
+	return b
+	}
+}
+console.log(getMax(15,19))*/
+
+/*function getMax(a,b){
+return  a>=b ?  a : b}
+
+console.log(getMax(15,19));*/
+
+/*function getMax(a,b,c){
+	return Math.max(a,b,c)
+}
+console.log(getMax(15,19,18,));*/
+
+/*function getMax(a,b,c){
+	var big= a>=b ? a : b
+	return big>=c ? big : c
+}*/
+//计算前n个数的和
+/*function sum(n){
+	var s=0
+	for (var i=1;i<=n ;i++ )
+	{s +=i;
+	}
+	return s;
+}*/
+//计算前n个数的乘积
+/*function cz(n){
+ var s=1
+ for (var i=1;i<=n ;i++ )
+ { s*=i
+ }
+ return s
+}*/
+//声明函数判断是否为闰年
+function isRun(n){
+return n%4==0 && n%100!=0 || n%400==0 ? true : false
+}
+var res=isRun(20100)
+if (res)
+{console.log('送你366个祝福')
+}else{console.log('送你365个祝福')}
+
+ </script>
+  
+ </body>
+</html>

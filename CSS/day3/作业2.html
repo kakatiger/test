@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	p,h1,h3,h3,h4,h5,h6,body,ul,ol,dl,pre{ margin:0}
+	.container{
+		width:93%;
+		height:400px;
+		border:1px solid gray;
+	}
+	.nav{
+		height:35px;
+		width:93%;
+		padding:0;		
+		background:rgba(238,238,238,.6);
+		margin-top:15px;
+	}
+	.nava{
+		padding:6px 8px;
+		border:1px solid rgba(128,128,128,0.2);
+		text-decoration:none;
+		color:rgb(143,177,202);
+		font-weight:530;
+		display:inline-block;
+		width:100px;
+		text-align:center;
+		border-radius:4px;
+	}
+	
+	.nava:link{
+		color:rgba(143,177,202);
+		
+	}
+	.nava:visited{
+		color:rgba(143,177,202);
+		
+	}
+	.nava:hover{
+		color:red;
+		border-top:1px solid red;
+		border-bottom:0px;
+		background:white;
+		margin:-5px 0;
+		
+		
+	}
+	.nava:active{
+		color:rgb(228,60,61);		
+	} 
+	.container table{
+		border-bottom:1px rgba(128,128,128,0.4) solid;
+		vertical-align:middle;
+		text-align:center;
+		margin-top:20px;
+	}
+	.container table tr{
+
+		
+	}
+	.container table td{
+		height:25px;
+		border-bottom:1px dotted gray;
+	}
+	#second1 td,#second2 td{
+		border:0;
+	}
+	#second2 td{
+		height:1px;
+		
+	}
+	 #first1{
+		text-align:left;
+		color:rgb(32,125,175)
+	} 
+  </style>
+ </head>
+ <body>
+ <div class='container'>
+	<div class='nav'>
+		<a href="#1"  class='nava'>朋友讨论圈</a>
+		<a href="#2"  class='nava'>晒单贴</a>
+		<a href="#3"  class='nava'>讨论帖</a>
+		<a href="#4"  class='nava'>问答帖</a>
+		<a href="#5"  class='nava'>圈子贴</a>				
+	</div>
+	<table cellspacing=0 cellpadding='5px' >
+		<tr id='second1'>
+			<td width='500px' id='first1'>主题</td>
+			<td width='200px'>回复/浏览</td>
+			<td width='150px'>作者</td>
+			<td width='300px'>时间</td>
+		</tr>
+		<tr id='second2'>
+			<td ><hr></td>
+			<td><hr></td>
+			<td><hr></td>
+			<td><hr></td>
+		</tr>
+		<tr>
+			<td id='first1'>处理器一般，只是看中颜值</td>
+			<td>0/0</td>
+			<td id=''>不晒网</td>
+			<td>2018/9/8</td>
+		</tr>
+		<tr>
+			<td id='first1'>银灰色的，外形像苹果</td>
+			<td>1/0</td>
+			<td>麦帅才</td>
+			<td>2018/9/8</td>
+		</tr>
+		
+	</table>
+ </div>
+ </body>
+</html>

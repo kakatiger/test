@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡</title>
+    <style>
+        div{
+            width:400px;
+            height:400px;
+            /*background:yellow;*/
+            transition:5s linear
+            -webkit-animation: mymovie 5s infinite ;
+            -o-animation: mymovie 5s infinite ;
+            animation: mymovie 5s ease-in-out infinite ;
+        }
+        div:hover{
+            transform:translate(500px) rotate(1080deg);
+        }
+        @keyframes mymovie{
+        0% {background-image:radial-gradient(50px at center center,red 0,royalblue 50%,white 100%);}
+        20% {background-image:radial-gradient(100px at center center,red 0,royalblue 50%,white 100%);}
+        30% {background-image:radial-gradient(150px at center center,red 0,royalblue 50%,white 100%);}
+        40% {background-image:radial-gradient(200px at center center,red 0,royalblue 50%,white 100%);}
+        50% {background-image:radial-gradient(300px at center center,red 0,royalblue 50%,white 100%);}
+        60% {background-image:radial-gradient(200px at center center,red 0,royalblue 50%,white 100%);}
+        70% {background-image:radial-gradient(150px at center center,red 0,royalblue 50%,white 100%);}
+        90% {background-image:radial-gradient(100px at center center,red 0,royalblue 50%,white 100%);}
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+</body>
+</html>

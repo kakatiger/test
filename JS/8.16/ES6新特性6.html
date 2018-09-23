@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>ES6</title>
+ </head>
+ <body>
+  <script>
+  //1.块级作用域
+  /*{
+	  let a=1;
+	  console.log(a)
+  }*/
+  //2.箭头函数
+ /* arr=[1,2,7,4]
+  //arr.sort((a,b)=>{return a-b;})
+  arr.sort((a,b)=>a-b)
+  console.log(arr)*/
+  //3.模板字符串
+  var bname='三国演义';
+  var author='罗贯中';
+  var publish='人名邮电出版社';
+  
+  var str=`
+	书名:${bname},
+	作者${author},
+	出版社:${publish}`
+	console.log(str)
+
+  
+  </script>
+ </body>
+</html>

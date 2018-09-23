@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>匹配模式</title>
+ </head>
+ <body>
+ <script>
+ var str='China is a great country,I love CHINA,and you?How do you think CHina(CHINA)'
+
+//console.log(str.indexOf('CHINA'))
+//查找到所有的china，并替换为’中国‘
+//console.log(str.replace('CHINA','中国'))
+//正则表达式
+// ignore 忽略 （忽略大小写）
+ //console.log(str.replace(/CHINA/ig,'中国'))
+//把找到的结果放到数组
+//console.log(str.match(/china/ig))
+
+//找到一个，就把下标返回
+console.log(str.search(/CHINA/))
+
+ </script>
+  
+ </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>渐变</title>
+    <style>
+        div{
+            width:500px;
+            height:500px;
+            background-image:linear-gradient(to left, #ff3524,yellowgreen,blueviolet,springgreen);
+            animation:mymovie 3s infinite alternate;
+            background-size:600% 100%;
+        }
+        @keyframes mymovie {
+            0% {
+                background-position:20% 0;
+            }
+            50%{
+               background-position: 80% 0;
+            }
+            100%{
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

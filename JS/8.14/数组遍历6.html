@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>数组遍历</title>
+ </head>
+ <body>
+  <script>
+ /* var arr=['刘备','曹操','孙权','关羽'];
+  for (i=0;i<=arr.length ;i++ )
+  {console.log(arr[i])
+  }*/
+
+  var car=['红旗','BYD','奔驰','宝马','大众']
+  car[car.length]='QQ'
+  car[car.length]='长城'
+  for (var item of car )
+  {console.log(item)
+  }
+  for (var i in car )
+  {console.log(car[i])
+  }
+
+  </script>
+ </body>
+</html>

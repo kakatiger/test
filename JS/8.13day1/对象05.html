@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+ <script>
+ 
+ //使用对象直接量
+ /*var phone={
+	 color:'white',
+	 size:'5.5',
+	 brand:'huawei',
+	 addr:'China',
+	 'op-sy':'android',
+	 }
+console.log(phone)*/
+
+var book={
+	bname:'Old and the sea',
+	author:'Hamwei',
+	publish:'上海英文出版社',
+	'pub-time':'2014.05.13'
+}
+ //console.log(book)
+ //单独访问对象中的属性
+ console.log(book.bname);
+ console.log(book['pub-time']);
+ console.log(book['author']);
+//在对象中添加属性
+book.color='red';
+book['size']='16';
+book.author='Haimingwei';
+console.log(book)
+
+
+
+
+ </script>	
+  
+ </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>设置时间信息</title>
+ </head>
+ <body>
+  <script>
+  /*var d=new Date('2018-7-16 12:30:00')
+  //d=d.toLocaleDateString() //获取本地日期格式
+  //d=d.toLocaleTimeString()//把date部分的时间部分转为字符串
+  d.setFullYear(2020)
+  d.setMonth(12)//超过11在原有年份上＋1
+  d.setDate(25);
+  d.setHours(11)
+
+  //设置距离1970年1月1日的毫秒数
+  d.setTime(1000)
+
+  console.log(d)*/
+  var d=new Date('2018-5-10')
+  d1=d.toLocaleDateString()
+  d2=d1.slice(0,4)
+  d21=3+d2
+  d21=d21.toString
+
+  console.log(d1)
+  d3=d1.replace(/d1/ig,d21)
+  console.log(d3)
+
+  var work=new Date('2018-5-10')
+  var target=new Date(work)
+  target.setFullYear(target.getFullYear()+3)
+  console.log('合同到期时间'+target.toLocaleDateString());
+  var time2=new Date(target);
+  time2.setMonth(time2.getMonth()-1);
+  day=time2.getDay();
+  console.log(day)
+ switch(day){
+	case 6:
+	time2.setDate(time2.getDate()-1)
+	break;
+	case 0:
+	time2.setDate(time2.getDate()-2)
+	break;
+	default:
+	time2.setDate(time2.getDate())
+
+ }
+console.log('续签时间'+time2.toLocaleDateString());
+var remaind=new Date(time2)
+remaind.setDate(remaind.getDate()-7)
+console.log('续签通知时间'+remaind.toLocaleDateString());
+
+  </script>
+ </body>
+</html>

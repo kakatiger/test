@@ -1,0 +1,42 @@
+@import "myColors";
+
+$after-radius:50%;
+$chang-time:2s;
+div{
+  width:200px;
+  height:200px;
+  background:$before-color;
+  transition:{property:all;duration:$chang-time}
+  &:hover{
+    border-radius:$after-radius;
+    background:$after-color;
+  }
+}
+//minix
+@mixin my_box_shadow{
+  box-shadow:0 0 5px 1px gray;
+  -moz-box-shadow:0 0 5px 1px gray;
+  -ms-box-shadow:0 0 5px 1px gray;
+  -webkit-box-shadow:0 0 25px 10px yellow;
+}
+.info{
+  background:green;
+  border:2px solid red;
+  @include my_box-shadow;
+}
+/*带传参数的混合器*/
+@mixin link_colors($normal,$hover,$visited){
+  color:$normal;
+  &:hover{color:$hover;}
+  &:visited{color:$visited;}
+}
+#a1{@include link_colors(black,red,yellow)}
+@mixin my_font($size,$style,$weight){
+  font-size:$size;
+  font-style:$style;
+  font-weight:$weight;
+}
+#d1{@include my-font(58px,italic,900)}
+#p1{@include my-font(29px,italic,400);
+  @include link_colors(black,red,yellow);
+}

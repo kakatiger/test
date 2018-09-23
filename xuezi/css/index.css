@@ -1,0 +1,50 @@
+.arrow_background{
+    width:35px;
+    height:70px;
+    background-color:rgb(128,128,139);
+}
+/*.show_laptop{
+    background-color:#e8e8e8;
+}
+
+.show_apple{
+    width:612px;
+    height:380px;}
+.show_air{
+    width:380px;
+    height:380px;
+}
+.show_small-1{
+    width:378px;
+    height:235px;
+}
+.show_small-2,.show_small-3,.show_small-4{
+    width:200px;
+    height:235px;
+}
+.floor_title{
+    font-size:25px;
+}
+.floor_1F{
+    border-bottom: 2px solid #8e8e8e;
+}*/
+/*第一张大图*/
+.my_img1{
+    height:16rem;
+}
+.show-bg{
+    background:#e8e8e8;
+}
+.my_img2{
+    height:12rem;
+    margin-left:-8rem;
+}
+@media screen and (max-width:767px){
+    .my_img1{
+        width:24rem;
+    }
+    .my_img2{
+        margin-left:0 !important;
+        width:12rem;
+    }
+}

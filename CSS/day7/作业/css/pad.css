@@ -1,0 +1,27 @@
+.container{
+    width:80%;
+    display:flex;
+    flex-flow:row nowrap;
+}
+.nav{
+    width:18%;
+    border:1px solid;
+    display:flex;
+    flex-flow:column wrap;
+}
+.middle{
+    border:1px solid;
+    width:72%;
+}
+.middle div{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-around;
+}
+.middle div img{
+    width:24%;
+    height:24%;
+}
+.adv{
+    display: none;
+}

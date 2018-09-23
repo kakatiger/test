@@ -1,0 +1,33 @@
+.list-size{
+    width:230px;
+    height:375px;
+    background-color:white;
+}
+.list-title{
+    background:linear-gradient(to top, #eeeeee, #e0e0e0);
+    line-height:38px;
+    font-size:16px;
+}
+.list-price{
+    font-size:16px;
+    color:#0aa1ed;
+    font-weight:bold;
+}
+.list-details{
+    font-size:14px;
+    -ms-word-break: break-all;
+    word-break: break-all;
+}
+.list-input{
+    width:20px;
+    outline:none;
+}
+.list-up-down{
+    font-size:20px;
+    font-weight:900;
+    color:white;
+    background:gray;
+}
+.list-img-hover:hover{
+    transform: scale(1.05);
+}

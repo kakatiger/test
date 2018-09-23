@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+ <script type='text/javascript'>
+
+function Abc(name,age,sex){
+	this.name=name;
+	this.age=age;
+	this.sex=sex;
+};
+function Bbc(grade,name,age,sex,tel){
+	Abc.call(this,name,age,sex);
+	this.tel=tel;
+	this.grade=grade;
+}
+var obj=new Bbc('four','daniu',41,'nan',15115545456)
+//call需要把实参的个数传进去，改变this指向
+//apply基本与call用法相同，单数需要传一个arguments
+
+
+
+
+ </script>
+  
+ </body>
+</html>

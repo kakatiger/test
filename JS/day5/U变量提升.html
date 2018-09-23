@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+  /*console.log(a);
+  var a=1 //声明的变量都会提升到最前方（格式var a。），到这一行再执行a=1*/
+  
+ /* function fn(){
+	console.log(b)//undefined
+	var b=2
+	console.log(b)//输出值2
+  }
+fn();*/
+var n=10
+function(n){ //形参只负责占位，局部变量
+	n=n+2  //先找函数内部的n
+	console.log(n)
+}
+fn(n);把n的值复制一份，以实参的形式传递给形参
+
+console.log(n)
+  </script>
+ </body>
+</html>

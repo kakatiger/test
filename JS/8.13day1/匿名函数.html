@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+
+ <script>
+ //声明函数的方式——匿名函数。
+
+/*var fn=function (){//把一个匿名函数放入了变量中。不存在函数的提升
+	console.log('hello')
+ }
+ //如何调用匿名函数——变量名称（）
+
+fn();
+
+//匿名函数用作回调函数。
+//传递参数。
+getSum(num1,num2){
+	return num1()+num2()
+}*/
+//传递匿名函数。
+(function(){
+	console.log('hello')
+})();//匿名函数的自执行
+//防止全局污染——全局的函数和全局的变量对整体的污染
+function getSum(num1,num2){
+	return num1()+num2();
+}
+var res=getSum(function(){return 1},function(){return 2});//回调函数
+
+
+ </script>
+  
+ </body>
+</html>

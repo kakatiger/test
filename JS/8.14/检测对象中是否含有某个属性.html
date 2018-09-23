@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+ <script>
+ //检测对象中是否含有某个属性
+ var person={
+	name:'tom',
+	age:'20',
+	gender:'男',
+ }
+ var res=person.hasOwnProperty('age');//内置的预定义成员方法
+ //console.log(res);
+  var res1='gender' in person;//使用in关键字
+ // console.log(res1)
+
+if (person.gender === undefined) //与undefined进行对比（使用三个等于，全等于）
+{console.log('这个不存在')
+}
+console.log('这个值存在')
+
+
+ 
+ </script>
+  
+ </body>
+</html>

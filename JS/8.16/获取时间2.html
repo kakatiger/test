@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+  //获取到2018.10.01还有多少天时分秒
+  var now=new Date()
+  var target=new Date('2018-10-1')
+  time1=now.getTime();
+  time2=target.getTime();
+  //cha=target-now  //两个对象相减得到的结果是距离计算机元年的差
+  console.log(time2,time1)
+  var cha=time2-time1
+  var tian=parseInt(cha/(24*60*60*1000))
+  var hour=parseInt((cha-24*3600*1000*tian)/(60*60*1000))
+  var minu=parseInt((cha-24*3600*1000*tian-3600*1000*hour)/(1000*60))
+  console.log('距离国庆假还有'+tian+'天'+hour+'小时'+minu+'分')
+
+  </script>
+ </body>
+</html>

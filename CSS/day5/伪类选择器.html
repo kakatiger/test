@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      div{
+          margin-top:25px;
+          width:500px;
+          height:500px;
+          border:2px solid darkorange;
+          position:relative;
+      }
+      div img{
+          float:left;
+          position:absolute;
+          top:20px;
+          left:40px;
+          visibility:hidden;
+      }
+      #pic1:target{
+          visibility:visible;
+      }
+      #pic2:target{
+          visibility:visible;
+      }
+      #pic3:target{
+          visibility:visible;
+      }
+      #pic4:target{
+          visibility:visible;
+      }
+
+    </style>
+</head>
+<body>
+<a href="#pic1">图片1</a>
+<a href="#pic2">图片2</a>
+<a href="#pic3">图片3</a>
+<a href="#pic4">图片3</a>
+<div>
+    <img src="header/pic1.png" alt="" id="pic1">
+    <img src="header/pic2.png" alt="" id="pic2">
+    <img src="header/pic3.png" alt="" id="pic3">
+    <img src="header/pic4.png" alt="" id="pic4">
+</div>
+</body>
+</html>

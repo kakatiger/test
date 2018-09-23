@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>xuezi</title>
+</head>
+<body>
+<!--引入头部-->
+<header>
+    <iframe src="header-yy.html" frameborder="0" class="my_header"></iframe>
+</header>
+<!--网页主体-->
+<div class="container">
+    <!--轮播图-->
+    <div class="carousel" id="banner" data-ride="carousel">
+        <!--添加指示符-->
+        <ul class="carousel-indicators">
+            <li data-target="#banner" data-slide-to="0" class="active"></li>
+            <li data-target="#banner" data-slide-to="1"></li>
+            <li data-target="#banner" data-slide-to="2"></li>
+            <li data-target="#banner" data-slide-to="3"></li>
+        </ul>
+        <!--轮播的图片-->
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <img src="img/index/banner1.png" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="img/index/banner2.png" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="img/index/banner3.png" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="img/index/banner4.png" alt="">
+            </div>
+
+        </div>
+        <!--添加左右箭头-->
+        <a href="#banner" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon arrow_background"></span>
+        </a>
+        <a href="#banner" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon arrow_background"></span>
+        </a>
+
+    </div>
+    <!--第一层-->
+    <div>
+        <p class="ml-5 mt-2 mr-5 floor_1F"><img src="img/index/computer_icon.png" alt="" class="ml-2"><span class="ml-3 floor_title">首页推荐&nbsp;/1F</span></p>
+        <!--<div class="d-flex justify-content-center ">-->
+            <!--<div class="show_apple mr-2 show_laptop position-relative">-->
+                <!--<div class="position-absolute">-->
+                    <!--<h3>Apple MacBook <br>Air系列</h3>-->
+                    <!--<p>酷睿双核i5处理器|256GB SSD|8GB内存|英特 <br>尔HD显卡620含共享显卡内存</p>-->
+                    <!--<h1>￥6988.00</h1>-->
+                    <!--<a href="#">查看详情</a>-->
+                <!--</div>-->
+                <!--<img src="img/index/study_computer_img1.png" alt="" class="position-absolute w-75">-->
+            <!--</div>-->
+            <!--<div class="show_air show_laptop"></div>-->
+        <!--</div>-->
+        <!--<div class="d-flex justify-content-center mt-2">-->
+            <!--<div class="show_small-1 show_laptop"></div>-->
+            <!--<div class="show_small-2 show_laptop ml-2"></div>-->
+            <!--<div class="show_small-3 show_laptop ml-2"></div>-->
+            <!--<div class="show_small-4 show_laptop ml-2"></div>-->
+        <!--</div>-->
+        <!--<div></div>-->
+
+
+    </div>
+    <!--第一行-->
+    <div class="row">
+        <div class="col-md-7 col-sm-12 pr-0">
+            <div class="card border-0 flex-md-row show-bg pt-3 pb-3">
+                <!--左 文字内容-->
+                <div class="card-body flex-column ">
+                  <h5>Apple MacBook Air系列</h5>
+                    <h6 class="mb-3 text-muted my_small">酷睿双核i5处理器|256GB SSD|8GB内存|英特尔HD显卡620含共享显卡内存</h6>
+                    <p class="text-primary mb-3">￥6988.00</p>
+                    <a href="#" class="btn btn-primary">查看详情</a>
+                </div>
+                <!--左 大图-->
+                <img src="img/index/study_computer_img1.png" alt="" class="img-fluid my_img1">
+            </div>
+        </div>
+        <div class="col-md-5 flex-row col-sm-12 mt-sm-2 mt-md-0">
+            <div class="card show-bg pt-3 pb-4 flex-row border-0">
+                <div class="card-body flex-column ">
+                    <h5>小米Air 金属超轻薄</h5>
+                    <h6 class="mb-3 text-muted my_small">酷睿双核i5处理器|512GB SSD|2GB内存|英特尔HD独立显卡</h6>
+                    <p class="text-primary mb-3">￥3488.00</p>
+                    <a href="#" class="btn btn-primary">查看详情</a>
+                </div>
+                <img src="img/index/study_computer_img2.png" alt="" class="img-fluid my_img2 mt-5 mr-5">
+            </div>
+        </div>
+
+    </div>
+    <!--第二行-->
+    <div class="row"></div>
+
+</div>
+<!--引入底部-->
+<iframe src="footer.html" frameborder="0" class="my_footer"></iframe>
+
+</body>
+</html>

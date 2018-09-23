@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+ <script>
+ //原始类型储存方式
+ var a=1;
+ var b=a;
+ b=2;
+ console.log(a);//1
+//2.引用类型的储存方式
+ var person1={
+	name:'Tom',
+	age:20
+ }
+ var person2=person1
+ person1['name']='Jerry';
+ console.log(person2);
+ person2.age=18;
+ console.log(person1);
+ 
+ 
+ </script>
+  
+ </body>
+</html>

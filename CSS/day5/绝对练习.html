@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+                    }
+        .main{
+            width:1000px;
+            height:400px;
+            margin: 100px auto;
+            border:1px solid darkgray;
+            background:royalblue;
+        }
+        .child{
+            position:relative;
+            border:1px solid red;
+            float:left;
+
+        }
+        .child span{
+            width:40px;
+            height:70px;
+            background:rgb(160,165,165)
+        }
+        .left{
+            float:left;
+            position:absolute;
+            top:150px;
+        }
+        .right{
+            float:left;
+            position:absolute;
+            left:960px;
+            top:150px;
+        }
+        .child #d1{
+
+            float:left;
+            position:absolute;
+            left:160px;
+            top:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child">
+            <img  id="d1" src="header/main.png"  alt="" width="300px" >
+            <span class="left"><img src="header/left.png" alt="" id="d2"></span>
+            <span class="right"><img src="header/right.jpg" alt="" id="d3"></span>
+        </div>
+    </div>
+</body>
+</html>

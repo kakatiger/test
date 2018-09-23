@@ -1,0 +1,9 @@
+body{
+    font:16px "微软雅黑";
+    padding:0;
+    margin:0;
+    border:1px solid black;
+}
+.nav a{
+    border:3px solid red;
+}

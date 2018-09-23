@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+<script>
+/*
+var o=new Object();
+o.name='大黄';
+o.color='yellow';
+o.type='中华田园犬'
+console.log(o)*/
+//使用函数创建对象——工厂函数
+/*function createObj(name,color,type){
+	var o=new Object();
+	o.name=name;
+	o.color=color;
+	o.type=type;
+	//返回创建对象o
+	return o;
+}
+var dog1=createObj('大黄','yellow','中华田园犬');
+var dog2=createObj('小猫猫','white','橘猫');
+console.log(dog1);
+console.log(dog2);*/
+
+function createObj(brand,size,color){
+	var o=new Object();
+	o.brand=brand;
+	o.size=size;
+	o.color=color;
+	return o;
+
+}
+var netbook1=createObj('lenovo','G589','黑的');
+var netbook2=createObj('DELL','BG200','蓝色的');
+var netbook3=createObj('MI','Air','银色的');
+console.log(netbook1,netbook2,netbook3)
+
+
+
+</script>
+
+
+  
+ </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            text-decoration:none;
+            list-style:none;
+        }
+        #banner{
+            width:1000px;
+            height:400px;
+            margin:100px auto;
+            overflow:hidden;
+            position:relative;
+
+        }
+        #banner ul.banner-img li{
+            float:left;
+            overflow: hidden;
+        }
+        #banner a.ck-side{
+            width:35px;
+            height:70px;
+            position:absolute;
+            top:165px;
+            /*z-index:9;*/
+        }
+        #banner a.ck-left{
+            background:#ddd url("index/arrow-left.png") no-repeat center center;
+            left:5px;
+        }
+        #banner a.ck-right{
+            background:#ddd url("index/arrow-right.png") no-repeat center center;
+            right:5px;
+        }
+        /*导航指示器*/
+        #banner ul.indc li{
+            width:10px;
+            height:10px;
+            background:#fff;
+            border-radius:50%;
+            float: left;
+            margin-right:7px;
+        }
+        #banner ul.indc{
+            position:absolute;
+            bottom:15px;
+            left:475px;
+            /*z-index: 9;*/
+        }
+        #banner ul.indc li.active{
+            background:#0aa1ed;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <!--1.四张大图-->
+        <ul class="banner-img">
+            <li>
+                <a href="#"><img src="index/banner1.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="index/banner3.png" id="NO2" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="index/banner4.png"  id="NO1" alt=""></a>
+            </li>
+        </ul>
+        <!--2.左右箭头按钮-->
+        <a href="#NO1" class="ck-left ck-side"></a>
+        <a href="#NO2" class="ck-right ck-side"></a>
+        <!--3.四个导航指示器-->
+        <ul class="indc">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

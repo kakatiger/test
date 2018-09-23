@@ -1,0 +1,60 @@
+$my_width:5%;
+$my_max_width:5%*4;
+$other_width:$my_width + $my_max_width;
+div{
+  width:$other_width;
+}
+p:before{
+  content:'Microsoft'+yahei;
+  font-family:A+'rial';
+}
+div{
+  font-size:80px/5px;
+  $width:1000px;
+  width:$width/2;
+  height:(500px/2);
+  margin:5px+10px/2px;
+}
+p:before{
+  content:'I am #{5+15} years old'
+}
+p{color:#0e02e3+#d10e95}
+h3{color:rgba(125,25,10,.5)+rgba(245,65,60,.5)}
+$var1:10px;
+$var2:20px;
+p{
+  width:($var1+$var2)*2;
+}
+h2{
+  color:hsl(0,100%,20%)
+}
+footer{
+  $width:max(10px,30px);
+  width:$width;
+}
+nav{
+  $height:random();
+  height:round($height*20)+px;
+}
+@function get_width($max,$min){
+  $max_width:$max;
+  $min_width:$min;
+  @return $max_width - $min_width;
+}
+.my_width{
+  width:get_width(60px,20px)
+}
+@function getSize($n){
+  $w1:60px;
+  $w2:10px;
+  @return $n * max($w1,$w2) + ($n - 1) * min($w1,$w2)
+}
+header{
+  width:getSize(3);
+  height:getSize(2);
+}
+p{
+  @if (1) {border-radius:5px;}
+  @if (1<0) {border-radius:15px;}
+}
+

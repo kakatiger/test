@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+  
+	<script>
+		function rank(elements){
+		for (var i=0;i<elements.length-1 ;i++ )//第一轮循环，比较的轮数
+		{for (var j=0;j<elements.length-i-1 ;j++ )//第二轮循环，比较的次数
+			{if (elements[j]>=elements[j+1])
+			 {var big=elements[j]
+			  elements[j]=elements[j+1]
+			  elements[j+1]=big
+
+			 }
+			 
+			}
+		}
+		}
+
+		function rank2(elements){
+		for (var i=1;i<elements.length ;i++ )
+		{
+			for (var j=1;j<elements.length-i ;j++ )
+			{
+				if (elements[j]<=elements[j+1])
+				{var big=elements[j];
+				 big=elements[j+1]
+				 elements[j+1]=elements[j]
+				 elements[j]=big
+				}
+			}
+		
+		}
+		var elements=[5,8,12,4,6,15]
+		rank(elements)
+		console.log(elements)
+		
+		/*for (var i=1;i<10 ;i++ )
+		{
+			var str='';
+			for (var j=1;j<=i ;j++ )
+		{	
+			//console.log(i+'*'+j+'='+i*j)
+			str+=`${i}*${j}=${i*j}  `
+			//console.log(str)
+		}
+		 console.log(str)	
+		}*/
+
+	
+	
+	</script>
+
+ </body>
+</html>

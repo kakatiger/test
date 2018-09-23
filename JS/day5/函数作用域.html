@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>函数的作用域</title>
+ </head>
+ <body>
+ <script>
+ //全局作用下的函数
+ function fn(){
+	console.log(123);
+ }
+ function getAvg(){
+	function getSum(num1,num2){
+		return num1+num2
+	}
+	return getSum(10,18)/2;
+ }
+ var res =getAvg();
+ console.log(res);
+ var res2=getSum(30,50)
+ console.log(res2)
+ </script>
+  
+ </body>
+</html>

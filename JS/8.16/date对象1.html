@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Date对象</title>
+ </head>
+ <body>
+  <script>
+
+ /*
+一月：January
+二月：February
+三月：March
+四月：April
+五月：May
+六月：June
+七月：July
+八月：August
+九月：September
+十月：October
+十一月：November
+十二月：December*/
+	//①
+  //var now=new Date()//当前系统时间
+  //console.log(now)
+  //②获取2018年11月20日
+  //var d=new Date(2018,11,20);//月份：0到11
+  //console.log(d)
+  //③
+  //var d=new Date('2018-11-20 0:0:0')
+  //console.log(d)
+  //④计算机元年
+  //var d=new Date(0)
+  //console.log(d)
+//2.通过date对象来获取时间信息
+var now=new Date();
+var year=now.getFullYear();
+var month=now.getMonth()+1;
+var date=now.getDate();
+var hour=now.getHours();
+var minute=now.getMinutes();
+var second=now.getSeconds();
+var millisecond=now.getMilliseconds();
+var day=now.getDay();//星期0到6
+console.log(year+'年'+month+'月'+date+'日'+'  '+hour+':'+minute+':'+second+':'+millisecond);
+console.log(day)
+switch(day){
+case 0:
+	day='星期日'
+	break;
+case 1:
+	day='星期一'
+	break;
+case 2:
+	day='星期二'
+	break;
+case 3:
+	day='星期三'
+	break;
+case 4:
+	day='星期四'
+	break;
+case 5:
+	day='星期五'
+	break;
+case 6:
+	day='星期六'
+}
+console.log(day)
+console.log(year+'年'+month+'月'+date+'日'+'  '+hour+':'+minute+':'+second+':'+millisecond+'  '+day);
+
+var time=now.getTime();
+console.log(time)
+//获取到2018.10.01还有多少天时分秒
+  </script>
+
+ </body>
+</html>

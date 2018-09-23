@@ -1,0 +1,43 @@
+div {
+  width: 25%; }
+
+p:before {
+  content: "Microsoftyahei";
+  font-family: Arial; }
+
+div {
+  font-size: 80px/5px;
+  width: 500px;
+  height: 250px;
+  margin: 10px; }
+
+p:before {
+  content: "I am 20 years old"; }
+
+p {
+  color: #df10ff; }
+
+h3 {
+  color: rgba(255, 90, 70, 0.5); }
+
+p {
+  width: 60px; }
+
+h2 {
+  color: #660000; }
+
+footer {
+  width: 30px; }
+
+nav {
+  height: 16px; }
+
+.my_width {
+  width: 40px; }
+
+header {
+  width: 200px;
+  height: 130px; }
+
+p {
+  border-radius: 5px; }

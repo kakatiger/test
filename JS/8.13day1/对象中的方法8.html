@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>对象中的方法</title>
+ </head>
+ <body>
+  <script>
+  
+  var person={
+	name:'tom',//成员属性
+	age:'33',
+	gender:'man',
+	say:function(){//成员方法
+		//对象中的this相当于当前的对象----person。
+		console.log('My name'+this.name+',我今年'+this.age+'了，性别'+this.gender)
+		},
+	run: function(){
+    console.log(this.name+'正在跑步');
+  }
+	
+  }
+  //调用对象中的方法
+  person.say()
+  person.run()
+  
+  
+  </script>
+ </body>
+</html>

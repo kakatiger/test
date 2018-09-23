@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+<body>
+  <div class="container">
+      <h1>下拉菜单</h1>
+    <div class="dropdown">
+        <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">触发元素</button>
+        <!--<ul class="dropdown-menu">
+            <li>中国</li>
+            <li>美国</li>
+            <li>德国</li>
+        </ul>-->
+        <div class="dropdown-menu">
+            <h5 class="dropdown-header">下拉菜单标题</h5>
+            <a href="#" class="dropdown-item active">item1</a>
+            <a href="#" class="dropdown-item disabled">item2</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">item3</a>
+            <a href="#" class="dropdown-item">item4</a>
+            <a href="#" class="dropdown-item">item5</a>
+        </div>
+        <hr>
+        <h1>选择城市</h1>
+        <div class="dropdown">
+            <button data-toggle="dropdown" class="btn btn-info">选择城市</button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">选择你所在城市</li>
+                <li class="dropdown-item active"><a href="#" class="text-white">成都</a></li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item"><a href="#" class="active">南充</a></li>
+                <li class="dropdown-item"><a href="#">达州</a></li>
+                <li class="dropdown-item"><a href="#">绵阳</a></li>
+            </ul>
+
+        </div>
+        <address>
+            <strong>Twitter, Inc.</strong><br>
+            1355 Market Street, Suite 900<br>
+            San Francisco, CA 94103<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+
+        <address>
+            <strong>Full Name</strong><br>
+            <a href="mailto:#">first.last@example.com</a>
+        </address>
+    </div>
+      <h1>按钮组</h1>
+      <div class="btn-group btn-group-vertical btn-group-lg">
+          <a href="#" class="btn btn-success">按钮1</a>
+          <a href="#" class="btn btn-info">按钮2</a>
+          <a href="#" class="btn btn-danger">按钮3</a>
+      </div>
+
+      <h1>信息提示框</h1>
+      <div class="alert alert-danger  w-25">
+          <span data-dismiss="alert" class="close">&times;</span>
+          提示信息框
+      </div>
+
+      <h1>胶囊导航</h1>
+
+  </div>
+
+</body>
+</html>

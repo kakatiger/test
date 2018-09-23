@@ -1,0 +1,29 @@
+.container{
+    width:80%;
+    display:flex;
+    flex-flow:row wrap;
+}
+.nav{
+    width:80%;
+    border:1px solid;
+    display:flex;
+    flex-flow:column wrap;
+}
+.middle{
+    border:1px solid;
+    width:80%;
+}
+.middle div{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    align-items:baseline;
+
+}
+.middle div img{
+    width:48%;
+    margin-top:3px;
+}
+.adv{
+    display: none;
+}

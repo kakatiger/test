@@ -1,0 +1,26 @@
+//2.在选择器.my_border中定义1px的实线边框为透明色，元素的宽度为400px，距离左边有30px的外边距，在选择器.my_bottom_border中继承.my_border样式，并且底边框为红色，鼠标悬停时底边框为蓝色。
+//3.定义一个带参混合器，将元素的宽度，高度，内边距和背景颜色作为参数传入到混合器中，然后在div和h3元素中使用混合器并传入不同实参，查看页面效果。
+.my_border{
+  border:1px solid transparent;
+  width:400px;
+  height:400px;
+  background:gray;
+  margin-left:30px;
+}
+.my_bottom_border{@extend.my_border;
+  border-bottom:1px solid red;
+  &:hover{border-bottom:2px solid blue;}
+  }
+@mixin squar_style($width,$height,$padding,$background){
+  width:$width;
+  height:$height;
+  padding:$padding;
+  background:$background;
+}
+#d1{
+  @include squar_style(200px,200px,60px,yellow)
+}
+#h31{
+  @include squar_style(200px,200px,30px,#f10216)
+}
+

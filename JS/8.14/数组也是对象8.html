@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>数组也是对象</title>
+ </head>
+ <body>
+ <script>
+ var arr=['Tom','jerry','david']
+ //①数组转为字符串
+ var res=arr.toString()
+ //console.log(res)
+ //②按照指定字符分割数组元素
+ var res1=arr.join('-')
+ //console.log(res1)
+ 
+ //③合并数组
+ var arr1=['Kitty','Lucy']
+ var arr2=['dapan','Lucy1']
+ //console.log(arr.concat(arr1,arr2))
+
+ //④截取数组
+ var arr3=['Tom','jerry','david','Kitty','Lucy']
+ //console.log(arr3.slice(2,4));//从2开始，包含本身。在4结束，不含本身。包含开始不包含结束。end为空表示截取到最后
+ //console.log(arr3.slice(-3));//倒数第三个。
+
+ //⑤删除数组元素
+ arr3.splice(1,0,'写上原来没有的就是增加');//返回被删除的函数
+ //console.log(arr3)
+
+ //⑥翻转数组
+var arr4=['Tom','jerry','david','Kitty','Lucy']
+//console.log(arr4.reverse());
+
+//对数组元素进行排序
+  var arr5=[8,6,5,14,9,45];
+  console.log(arr5.sort()  //默认按Unicode码排序
+  console.log(arr5.sort(function (a,b){return b-a})) //由大到小排序
+
+
+
+ </script>
+  
+ </body>
+</html>

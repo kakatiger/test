@@ -1,0 +1,55 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+.banner{
+    position:relative;
+    height:920px;
+}
+.banner .banner-1{
+    background:url("../img/slider1.jpg");
+}
+.banner .banner-2{
+    background:url("../img/slider2.jpg");
+}
+.banner .banner-3{
+    background:url("../img/slider3.jpg");
+}
+.banner .banner-pic{
+    background-repeat:no-repeat;
+    position:absolute;
+    width:100%;
+    height:920px;
+
+}
+.banner-pic div{
+    position:absolute;
+    top:340px;
+    left:30%;
+}
+.banner-pic h4,.banner-pic h1,.banner-pic p,.banner-pic a {
+    text-align:center;
+    margin-bottom:20px;
+    color:white;
+}.banner-pic h4{
+    font-weight:800;
+    font-size:24px;
+ }
+ .banner-pic h1{
+     font-weight:900;
+     font-size:54px;
+ }
+.banner-pic a{
+    display:block;
+    width:190px;
+    position:relative;
+    left:200px;
+    height:40px;
+    line-height:40px;
+    background:white;
+    border-radius:20px;
+    color:black;
+    font-weight:500;
+    margin-top:30px;
+}

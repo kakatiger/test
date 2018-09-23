@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>API</title>
+ </head>
+ <body>
+  <script>
+// var str='javascript';
+  /* //console.log(str.length);//获取字符串长度
+ // console.log(str.charAt(0))
+  //console.log(str.charCodeAt(0).toSring(16))
+  //遍历字符串，求a出现的次数
+  var sum=0;
+  for (var i in str)
+  {console.log(str[i])
+  if (str[i]=='a')
+  {sum+=1
+  }
+  }
+console.log(sum)
+//查找字符对应得下标
+console.log(str.indexOf('v',5));//'v'找什么。5：从哪一位开始找
+console.log(str.lastIndexOf('a'))// 最后一个a的位置。。如果找不不到字符，返回值-1
+*/
+//验证邮箱格式是否合法
+ /*var email=prompt('请输入你的邮箱')
+if (email.indexOf('@')>0)
+{alert('你的邮箱正确')
+}else{alert('你的邮箱不正确')}*/
+//字符串截取
+//console.log(str.slice(4))//从第4个往后
+//console.log(str.slice(4,10))//4~10 包含第四不不包含第10
+//通过身份证号获取生日
+/*var id = '522312199511056141'
+y = id.slice(6,10);
+m=id.slice(10,12);
+d=id.slice(-6,-4);
+console.log(y+'年'+m+'月'+d+'日')*/
+/*var num=prompt('我的邮箱')
+var num1=num.indexOf('@')
+console.log('我的用户名:'+num.slice(0,num1))
+console.log('域名:'+num.slice(num1+1))*/
+
+var str='helLO';
+num1=(str.slice(0,1)).toUpperCase();
+num2=(str.slice(1)).toLowerCase();
+strn=num1+num2
+console.log(strn)
+
+
+  </script>
+ </body>
+</html>

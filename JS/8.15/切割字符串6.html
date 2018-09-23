@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>切割字符串</title>
+ </head>
+ <body>
+  <script>
+  //数组转换成字符串
+  // toString
+ // var arr=['Tom','Jerry','Tiger']
+ // console.log(arr.join('-'))
+  /*var str='a|b|c'
+  var arr=str.split('|')
+  console.log(arr)
+*/
+
+/*var email='4513889@qq.com'
+var arr=email.split('@')
+console.log(arr)*/
+ var abc='My naMe is Tom'
+ var arr=abc.split(' ')
+ 
+for (var i in arr )
+{
+	var a=arr[i].slice(0,1).toUpperCase()
+	var b=arr[i].slice(1).toLowerCase()
+	arr[i]=a+b
+	
+}
+//console.log(arrr)
+console.log(arr.join(' '))
+
+
+  </script>
+ </body>
+</html>

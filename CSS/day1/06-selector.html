@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	/* 1.通用选择器 */
+	body{
+		color:red;
+		font-size:40px;
+	}
+	/* 2元素选择器 */
+
+	p{color:yellow;}
+
+	/* 3类选择器 */
+	.my_fontsize{
+		font-size:48px;
+		font-style:italic
+	}'
+	.mycolor{
+		color:green;
+	}
+	/* 后代选择器 */
+	#list li a{
+		color:gray;
+		font-size:20px;
+		text-decoration:none;
+	}
+  </style>
+ </head>
+ <body>
+	<p class='my_fontsize mycolor'>明月几时有</p>
+	<div>把酒问青天</div>
+	<p>不知天上宫阙</p>
+	<span>今夕是何年</span>
+	<ul id='list'>
+		<li><a href="#">西洋参片 100ml</a></li>
+		<li><a href="#">西洋参片 120ml</a></li>
+		<li><a href="#">西洋参片 1500ml</a></li>
+	</ul>
+ </body>
+</html>

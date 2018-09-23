@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>变量的作用域</title>
+ </head>
+ <body>
+  <script>
+  /*
+  //变量的作用域
+	var num1=1;//全局变量，可以在任何位置访问。
+	function fn1(){
+		var num2=2 //局部变量
+		console.log('内部访问'+num1)//此处num1可以访问到
+	}
+//在函数的外部访问num2.
+  console.log('外部访问'+num2)//此处显示num2未定义*/
+/*var num3=3
+function fn2(){
+	num3=4//全局变量被重新赋值。
+}
+fn2();// 没有这一步，num3=3，有了这一步，num3=4
+*/
+function fn4(){
+num4=4 //没有添加var。变量也是全局变量。
+}
+fn4();
+console.log(num4)
+  </script>
+ </body>
+</html>

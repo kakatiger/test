@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+<body>
+  <div class="container">
+      <h1>水平导航</h1>
+      <ul class="nav justify-content-around nav-justified">
+          <li class="nav-item bg-warning"><a href="http://baidu.com/" class="nav-link bg-success">百度</a></li>
+          <li class="nav-item"><a href="http://www.iciba.com/" class="nav-link bg-success">在线翻译</a></li>
+      </ul>
+      <br>
+      <ul class="nav nav-justified justify-content-around bg-light">
+          <li class="nav-item"><a href="#" class="nav-link text-dark">京东超市</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-dark">京东超市</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-dark">京东超市</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-dark">京东超市</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-dark">京东超市</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-dark">京东超市</a></li>
+      </ul>
+
+      <h1>选项卡导航</h1>
+      <ul class="nav nav-tabs">
+          <li class="nav-item active">
+              <a href="#no1" class="nav-link" data-toggle="tab">选项卡导航1</a>
+          </li>
+          <li class="nav-item">
+              <a href="#no2" class="nav-link" data-toggle="tab">选项卡导航2</a>
+          </li>
+      </ul>
+        <!--以下是要切换的内容-->
+      <div class="tab-content">
+          <div class="tab-pane active" id="no1">
+              具体内容
+          </div>
+          <div class="tab-pane" id="no2">
+              具体内容2
+          </div>
+      </div>
+
+      <h1>胶囊导航</h1>
+      <ul class="nav nav-pills justify-content-around">
+          <li class="nav-item"><a href="#d1" class="nav-link active" data-toggle="pill">123</a></li>
+          <li class="nav-item"><a href="#d2" class="nav-link" data-toggle="pill">一二三</a></li>
+          <li class="nav-item"><a href="#d3" class="nav-link" data-toggle="pill">三二一</a></li>
+      </ul>
+      <!--要切换的内容-->
+      <div class="tab-content">
+        <div class="tab-pane active" id="d1">胶囊1：</div>
+        <div class="tab-pane" id="d2">胶囊2：</div>
+        <div class="tab-pane" id="d3">胶囊3：</div>
+      </div>
+
+      <div class="nav nav-tabs">
+          <div class="nav-item"><a href="#one" class="nav-link" data-toggle="tab">da</a></div>
+          <div class="nav-item"><a href="#two" class="nav-link" data-toggle="tab">fa</a></div>
+          <div class="nav-item"><a href="#" class="nav-link" data-toggle="tab">ga</a></div>
+      </div>
+      <div class="tab-content">
+          <div class="tab-pane" id="one">fsldkfjslkjfklsajf</div>
+          <div class="tab-pane" id="two">Sdfs第三方士大夫f</div>
+      </div>
+
+
+
+      <h1>制作导航栏</h1>
+      <nav class="navbar navbar-expand-sm">
+          <ul class="navbar-nav bg-dark w-100">
+              <li class="nav-item"><a href="#" class="nav-link">铭记九一八1</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">铭记九一八2</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">铭记九一八3</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">铭记九一八4</a></li>
+          </ul>
+      </nav>
+
+      <h1>折叠</h1>
+      <button class="btn" data-toggle="collapse" data-target="#demo">折叠</button>
+      <div id="demo" class="collapse">
+          显示的具体内容。
+      </div>
+
+      <a href="#my-content" class="btn btn-info" data-toggle="collapse">a标记折叠</a>
+      <div id="my-content" class="collapse">
+          <ul class="list-unstyled">
+              <li>111111111</li>
+              <li>222222222222</li>
+              <li>333333333333333</li>
+          </ul>
+      </div>
+
+      <h1>bootstrap</h1>
+      <a href="#caidan" data-toggle="collapse" class="btn btn-primary">这是图片</a>
+      <div id="caidan" class="collapse">
+          <ul class="list-unstyled">
+              <li><a href="#"><h2>Bootstrap中文网</h2></a></li>
+              <li><a href="#">Bootstrap2中文 文档</a></li>
+              <li><a href="#">Bootstrap3中文文档</a></li>
+              <li><a href="#">Bootstrap4中文文档</a></li>
+              <li><a href="#">Less教材</a></li>
+          </ul>
+
+      </div>
+
+      <h1>折叠导航栏</h1>
+        <h1 class="navbar "></h1>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <a href="#" class="navbar-brand">Bootsrap中文网</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main">
+              <!--小屏幕按钮上短横线效果-->
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="main" class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="#">Bootstrap2中文 文档</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Bootstrap3中文文档</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Bootstrap4中文文档</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Less教材</a></li>
+              </ul>
+          </div>
+      </nav>
+      <br>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <a href="#" class="navbar-brand">Bootstrap中文网</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#test">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="test">
+              <ul class="navbar-nav">
+                  <li class="nav-item"><a href="#" class="nav-link">Bootstrap2中文 文档</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Bootstrap3中文文档</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Bootstrap4中文文档</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Less教材</a></li>
+              </ul>
+          </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+</body>
+</html>

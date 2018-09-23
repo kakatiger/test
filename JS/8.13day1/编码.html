@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>全局函数</title>
+ </head>
+ <body>
+  <script>
+	//1.对一个URI进行编码
+	var uri='http://www.codebody.com/?kw=戴尔&addr=中国';
+	var res=encodeURI(uri);
+	var res2=decodeURI(res);
+
+	//检测是否为NaN
+	//var num=Number();
+	//console.log(isNaN(num));
+	//检测是否为有限值
+	/*var num1=4154*8786
+	var num2=1/0 //结果为无限制
+	console.log(isFinite(num2))*/
+
+	//eval执行字符串表达式
+	/*var a=1
+	var b=2
+	var res=eval('a+b')
+	console.log(res)*/
+
+	var num=prompt('请输入你想计算的')
+	document.write(eval(num))
+
+
+  </script>
+ </body>
+</html>

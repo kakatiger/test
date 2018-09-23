@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+
+ <script>
+ //产生闭包
+ /*function test1(){
+	var arr=[];
+	for (var i=0;i<10 ;i++ )
+	{
+		arr[i]=function (){
+			document.write(i+'  ')
+		}
+
+	}
+	return arr
+ }
+ var myArr=test1();
+ for (j=0;j<10 ;j++ )
+ {
+	 myArr[j]();
+ }*/
+//闭包的解决
+function test1(){
+	var arr=[];
+	for (var i=0;i<10 ;i++ )
+	{
+		(arr[j]=function (j){
+			document.write(j+'  ')
+		})(i)
+
+	}
+	return arr
+ }
+ var myArr=test1();
+ for (var j=0;j<10 ;j++ )
+ {
+	 myArr[j]();
+ }
+
+ </script>
+  
+ </body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	/* 子代选择器 */
+	div>span{
+		color:red;
+		font-size:36px;
+	}
+	#a1:link{
+		color:yellow
+	}
+	#a1:visited {
+		color:green;
+	}
+	#a1:hover{
+		color:red;
+	}
+	#a1:active{
+		color:blue;
+	}
+	input:focus{
+		color:red;
+	}
+	#a2:link{
+		color:red;
+		text-decoration:none;
+	}
+	#a2:hover{
+		color:yellow;
+	}
+	#a2:visited{
+		color:green;
+	}
+	#a2:active{
+		color:red;
+		font-size:36px;
+	}
+
+	#put1{
+		font-style:italic;
+	}
+	#put1:active{
+		font-style:normal;
+
+	}
+	#put1:focus{
+		color:red;
+	}
+  </style>
+ </head>
+ <body>
+	<div>
+		<p>
+			<span>
+				二级选择器的span
+			</span>
+		</p>
+		<span>一级嵌套的span</span>
+	</div>
+	<p>
+		<a id='a1' href="http://www.baidu.com">百度</a>
+	</p>
+	<input type="text">	
+	<p>
+		<a id='a2' href="http://www.12306.cn">兴旺</a>
+	</p>
+	<input type="text" id='put1'>
+ 
+ </body>
+</html>

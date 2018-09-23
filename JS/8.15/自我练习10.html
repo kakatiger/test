@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>练习</title>
+ </head>
+ <body>
+  <script>
+ 
+   /*if (str.indexOf('@')>0)
+  {alert('ture')
+  }else{alert('false')}
+  num1=str.indexOf('@')
+  document.write('用户名'+str.slice(0,num1))
+  document.write(str.slice(0,1).toUpperCase()+str.slice(1).toLowerCase());*/
+var str='What is the great achievements the FUTURE may have store in China?'
+var arr=str.split('|');
+for (var i in arr )
+{
+	var a=arr[i].slice(0,1).toUpperCase();
+	var b=arr[i].slice(1).toLowerCase();
+	arr[i]=a+b
+}
+console.log(arr.join(' '))
+
+  </script>
+ </body>
+ a=arr[i].slice(0,1).toUpperCase()
+</html>

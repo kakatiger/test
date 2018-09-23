@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片弹性</title>
+    <style>
+        #container{
+            width:1000px;
+            height:200px;
+            margin:0 auto;
+            background:rgb(245,245,245);
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-around;
+            align-items: center;
+        }
+        #container span img{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+       <span> <img src="icon1.png" alt="">品质保障</span>
+
+        <span><img src="icon2.png" alt=""></span>
+        <span><img src="icon3.png" alt=""></span>
+        <span><img src="icon4.png" alt=""></span>
+    </div>
+</body>
+</html>
